@@ -9,7 +9,7 @@ public class SelfIntroduction {
 		//年齢
 		int age = 25;
 		//趣味
-		String hobby = " アニメ鑑賞";
+		String hobby = "アニメ鑑賞";
 				
 		/*
 		 * 自己紹介分を出力する処理
