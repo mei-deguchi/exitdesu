@@ -32,15 +32,15 @@ public class Qes1_13 {
 		// cに初期値を代入
 		c = 0;
 		// dに初期値に代入
-		d = 0;
+		d = 0L;
 		// eに初期値に代入
-		e = 0.0F;
+		e = 0.0f;
 		// fに初期値に代入
-		f = 0.0;
+		f = 0.0d;
 		// gに初期値を代入
-		g = 'b';
+		g = '\u0000';
 		// hに初期値を代入
-		h = "a";
+		h = null;
 		// iに初期値を代入
 		i = false;
 		
@@ -52,11 +52,11 @@ public class Qes1_13 {
 		// cに値を代入
 		c = 1000;
 		// dに値を代入
-		d = 10000;
+		d = 10000L;
 		// eに値を代入
 		e = 9.5F;
 		// fに値を代入
-		f = 10.5;
+		f = 10.5d;
 		// gに値を代入
 		g = 'a';
 		// hに値を代入
@@ -69,21 +69,19 @@ public class Qes1_13 {
 		 * 上記で作成した変数を必ず使用すること			
 		 */
 		// a,b,c,dに代入した値を足して、出力
-		long sum1 = a + b + c + d;
-		System.out.println(sum1);
+		long sum1= a + b + c + d;
 		// a+aをして、出力
 		int sum2 = a + a;
-		System.out.println(sum2);
 		// g,h,iの値を文字列にして、出力
 		System.out.println(g + " " + h + " " + i);
-		// sum1とsum2を足して、出力
-		System.out.println(sum1 + sum2);
+		// 全部足して、出力
+		System.out.println(a + b + c + d + sum2);
 		// 小数点以外の数字を全てかけて、出力
 		System.out.println(a * b * c * d);
 		// fの値割る100をして、出力
-		System.out.println(f / 100);
+		System.out.println(f / b);
 		// aの値引く100をして、出力
-		System.out.println(a - 100);
+		System.out.println(a - b);
 		
 		/*
 		 * 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。			
@@ -101,19 +99,19 @@ public class Qes1_13 {
 		 * ローカル変数に代入し○○に入れてください
 		 * 『山田太郎 18歳 170.5cm 62.2kg 寿司』
 		 */
-		// name変数に値を代入、出力
+		// 名前
 		String name = "山田太郎";
 		System.out.println("初めまして" + name + "です");
-		// age変数に値を代入、出力
+		// 年齢
 		int age = 18;
 		System.out.println("年齢は" + age + "歳です");
-		// height変数に値を代入、出力
+		// 身長
 		double height = 170.5;
 		System.out.println("身長は" + height + "cmです");
-		// weight変数に値を代入、出力
+		// 体重
 		double weight = 62.2;
 		System.out.println("体重は" + weight + "kgです");
-		// food変数に値を代入、出力
+		// 好きな食べ物
 		String food = "寿司";
 		System.out.println("好きな食べ物は" + food + "です");
 		
@@ -122,78 +120,78 @@ public class Qes1_13 {
 		 * 「BMIは○○です」		
 		 * ただし計算は数値を直書きせず、全て変数を使ってすること		
 		 */
-		// BMIを計算し、出力
-		double kgHeight = height / 100;
-		double bmi = weight /(kgHeight * kgHeight);
+		// BMIを計算
+		double HeightM = height / 100;
+		double bmi = weight /(HeightM * HeightM);
 		System.out.println("BMIは" + bmi + "です");
 		
 		// 6で宣言した変数に再代入し下記の通りコンソールに出力してください
-		// 名前の値を再代入し、出力			
+		// 名前		
 		name = "鈴木一郎";
 		System.out.println("初めまして" + name + "です");
-		// 年齢の値を再代入し、出力
-		age = 24;
-		System.out.println("年齢は" + age + "歳です");
-		// 身長の値を再代入し、出力
+		// 年齢
+		int age1 = 24;
+		System.out.println("年齢は" + age1 + "歳です");
+		// 身長
 		height = 168.5;
 		System.out.println("身長は" + height + "cmです");
-		// 体重の値を再代入し、出力
+		// 体重
 		weight = 64.2;
 		System.out.println("体重は" + weight + "kgです");
-		// 好きな食べ物の値を再代入し、出力
+		// 好きな食べ物
 		food = "オムライス";
 		System.out.println("好きな食べ物は" + food + "です");
-		// BMIの値を再計算し、出力
-		double kgHeight1 = height / 100;
-		double bmi1 = weight /(kgHeight1 * kgHeight1);
+		// BMI
+		double HeightM1 = height / 100;
+		double bmi1 = weight /(HeightM1 * HeightM1);
 		System.out.println("BMIは" + bmi1 + "です");
 		
 		// 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
-		// 名前を出力
+		// 名前
 		System.out.println("初めまして" + name + "です");
-		// 年齢の値を自己代入、出力
-		age = age + age;
-		System.out.println("年齢は" + age + "歳です");
-		// 身長の値の値を自己代入、出力
+		// 年齢
+		int age2 = age1 + age1;
+		System.out.println("年齢は" + age2 + "歳です");
+		// 身長
 		height = height + height;
 		System.out.println("身長は" + height + "cmです");
-		// 体重の値を自己代入、出力
+		// 体重
 		weight = weight + weight;
 		System.out.println("体重は" + weight + "kgです");
-		// 好きな食べ物を出力
+		// 好きな食べ物
 		System.out.println("好きな食べ物は" + food + "です");
-		// BMIの値を再計算、出力
+		// BMI
 		bmi1 = bmi1 / 2;
 		System.out.println("BMIは" + bmi1 + "です");
 		
 		// 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 		// 年齢が25歳以上の場合、trueを出力
-		System.out.println(age >= 25);
+		System.out.println(age1 >= 25);
 		
 		// 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 		// 年齢の値を文字列に型変換
-		String age1 = String.valueOf(age);
+		String age3 = String.valueOf(age1);
 		// 身長の値を文字列に型変換
 		String height1 = String.valueOf(height);
 		// 体重の値を文字列に型変更
 		String weight1 = String.valueOf(weight);
-		// 年齢・身長・体重を出力
-		System.out.println(age1 + "・" + height1 + "・" + weight1);
+		// 年齢・身長・体重
+		System.out.println(age3 + "・" + height1 + "・" + weight1);
 		
 		// 11で変換した【年齢・身長】を整数型に変換して出力してください
 		// 年齢の値を整数型に変換
-			int age2 = Integer.valueOf(age1);
+			int age4 = Integer.valueOf(age3);
 		// 身長の値を倍精度浮動小数点数型から整数型に変換
-			int height2 =(int)Double.parseDouble(height1);
-		// 年齢・身長を出力
-			System.out.println(age2 + "・" + height2);
+			int height2 = (int)Double.parseDouble(height1);
+		// 年齢・身長
+			System.out.println(age4 + "・" + height2);
 	
 		/*
 		 * 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		 * ただしif文は使わないでください
 		 */
 		// 年齢が25もしくは身長が160以上であれば、trueを出力
-		System.out.println(age2 >= 25 || height2 >= 160);
+		System.out.println(age4 >= 25 || height2 >= 160);
 	}
 
 }
