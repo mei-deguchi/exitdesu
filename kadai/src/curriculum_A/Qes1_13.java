@@ -223,7 +223,7 @@ public class Qes1_13 {
 		
 		// 体重
 		double weight1 = weight + weight;
-		System.out.println("体重は" + weight + "kgです");
+		System.out.println("体重は" + weight1 + "kgです");
 		
 		// 好きな食べ物
 		System.out.println("好きな食べ物は" + food + "です");
