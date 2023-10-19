@@ -55,9 +55,6 @@ public class Qes1_3 {
 			// 	相手の手をランダムで表示
 			int pcHand = new java. util.Random(). nextInt(3);
 			
-			
-			
-			
 			// コメント出力
 			System.out.println(name + "の手は" + janken[userHand]);
 			System.out.println("相手の手は" + janken[pcHand]);
@@ -70,6 +67,7 @@ public class Qes1_3 {
 				System.out.println("次は俺にリベンジさせて");
 				System.out.println();
 				System.out.println("勝つまでにかかった合計回数は" + num + "回です");
+				// 勝った場合、繰り返し処理終了
 				break;
 				
 			// 自分がグーに負けた場合、コメント出力	
