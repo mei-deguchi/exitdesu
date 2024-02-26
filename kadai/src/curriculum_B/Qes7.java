@@ -16,6 +16,7 @@ public class Qes7 {
 		// 多次元配列を初期化し、変数に代入
 		int[][] line = new int[st][4];
 		
+		
 		// for文で指定した数まで繰り返し処理
 		for (int i = 0; i < st; i++) {
 				
