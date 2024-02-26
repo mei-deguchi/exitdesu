@@ -18,8 +18,7 @@ public class Qes7 {
 		
 		// for文で指定した数まで繰り返し処理
 		for (int i = 0; i < st; i++) {
-			
-			
+				
 			System.out.print((i + 1) + "人目の『英語』の点数を入力してください :");
 			line[i][0] = sc.nextInt();
 
