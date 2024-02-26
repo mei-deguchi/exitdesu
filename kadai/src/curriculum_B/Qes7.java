@@ -42,10 +42,10 @@ public class Qes7 {
 			System.out.println((i + 1) + "人目の平均点は" + ((double) Math.round(ave * 100)) / 100 + "点です。");
 
 		}
-
+		
 		System.out.println();
 		
-		// 人数分の科目ごとの変数を初期化
+		// 人数分の科目ごとの変数を初期化。
 		double sumEnglish = 0;
 		double sumMath = 0;
 		double sumSience = 0;
