@@ -24,11 +24,11 @@ public class Qes1_3 {
 		
 		// ユーザー名が10文字以上の場合、コメント出力
 		if (name.length() >= 10) {
-		System.out.println("「名前を10文字以内にしてください」");
+			System.out.println("「名前を10文字以内にしてください」");
 		
 		// ユーザー名が0文字以下・nullの場合、コメント出力
 		} else if (name.isEmpty() || name == null) {
-					System.out.println("「名前を入力してください」");
+			System.out.println("「名前を入力してください」");
 		
 		// ユーザー名が半角英数字以外の場合、コメント出力
 		} else if (!m.matches()) {
