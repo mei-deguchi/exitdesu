@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class Animal {
 	
 	public static void main(String[] args) {
-		//Dog.printCount();
+		Dog.count();
 		Dog animal = new Dog("キリン");
 		//dog.animalName = "キリン";
 		// Q1：Dogクラスを呼び出して変数に代入し、動物の名前をコンソールに出力してください。
