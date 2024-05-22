@@ -6,7 +6,7 @@ public class Animal {
 	
 	public static void main(String[] args) {
 		Dog kirin = new Dog("キリン", 30);		// キリンインスタンス作成
-		Dog elephant = new Dog("ゾウ", 10);		// 	ゾウインスタンス作成
+		Dog elephant = new Dog("ゾウ", 10);		// ゾウインスタンス作成
 
 		// Q1：Dogクラスを呼び出して変数に代入し、動物の名前をコンソールに出力してください。
 		// コンソールに動物名を出力
