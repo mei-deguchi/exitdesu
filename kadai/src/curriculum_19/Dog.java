@@ -8,12 +8,13 @@ public class Dog {
 	int count;
 	
 	// Q3：Q1で作成した変数に「犬」を代入するコンストラクタを作成してください。
-	Dog(String animalName) {
-		Dog.count ++;
+	Dog(String animalName, int number) {
+		count ++;
 		this.animalName = animalName;
+		Count(number);
 	}
 	// Q4：Q2で作成した変数に引数を代入するコンストラクタを作成してください。
-	Dog(int num){
-		this.count = num;
+	public void Count(int number){
+		this.count = number;
 	}
 }
