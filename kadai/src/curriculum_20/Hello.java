@@ -6,7 +6,7 @@ public class Hello {
 	String food;
 	String countryFood;
 	int today;
-	
+
 	// コンストラクタ実行
 	public Hello(String country, String food, String countryFood) {
 		this.country = country;
