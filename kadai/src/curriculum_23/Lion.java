@@ -19,7 +19,6 @@ public class Lion {
 		return this.animal;
 	}
 
-
 	// setter
 	public void setAnimal(String animal) {
 		this.animal = animal;
