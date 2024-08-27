@@ -13,7 +13,7 @@ public class Main {
 
 		// 複数の動物の情報を区切るためのコンマ
 		String[] animal = input.split(",");
-
+ 
 		// 各動物の情報を処理する
 		for (String animal1 : animal) {
 
