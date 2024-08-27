@@ -9,7 +9,7 @@ public class Main {
 		// 文字列の受け取り
 		Scanner sc = new Scanner(System.in);
 		System.out.println("コンソールに文字を入力してください");
-		String input = sc.nextLine();
+		String input = sc.nextLine(); 
 
 		// 複数の動物の情報を区切るためのコンマ
 		String[] animal = input.split(",");

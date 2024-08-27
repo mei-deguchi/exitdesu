@@ -52,7 +52,7 @@ public class Animal {
 	public void setAnimal(String name) {
 		this.name = name;
 	}
-
+ 
 	public double getSize() {
 		return this.size;
 	}
