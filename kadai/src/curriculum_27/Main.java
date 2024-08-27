@@ -16,10 +16,10 @@ public class Main {
 
 		// 各動物の情報を処理する
 		for (String animal1 : animal) {
-			
+
 			// :で情報を区切る
 			String[] parts = animal1.split(":");
-			
+
 			// 動物名：体長：速度を入力した時の情報を取得
 			if(parts.length == 3) {
 
@@ -40,7 +40,7 @@ public class Main {
 			}
 
 		}
-		
+
 		// スキャナ閉じる
 		sc.close();
 	}

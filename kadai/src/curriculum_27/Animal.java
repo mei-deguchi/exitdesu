@@ -15,28 +15,28 @@ public class Animal {
 		this.speed = speed;
 		this.scientificName = scientificName(name);
 	}
-	
+
 	// 学名を取得するメソッド
 	private String scientificName(String name) {
-		
+
 		// 動物の名前によって学名を取得
 		switch (name) {
-		
+
 		case "ライオン":
 			return "パンテラ レオ";
-			
+
 		case "ゾウ":
 			return "ロキソドンタ・サイクロティス";
-			
+
 		case "パンダ":
 			return "アイルロポダ・メロノレウカ";
-			
+
 		case "チンパンジー":
 			return "パン・トゥログロディテス";
-			
+
 		case "シマウマ":
 			return "チャップマンシマウマ";
-			
+
 		case "インコ":
 			return "不明";
 		}
