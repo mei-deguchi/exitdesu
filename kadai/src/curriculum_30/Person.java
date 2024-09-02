@@ -6,21 +6,23 @@ public class Person {
 	private int age;
 	private double height;
 	private double weight;
+	// countを定義
 	public static int count;
-	
 
-	
+
+
 	// コンストラクタを定義しインスタンスフィールドに値をセット
 	Person(String name, int age, double height, double weight){
-		
-		Person.count++;
 		
 		this.name = name;
 		this.age = age;
 		this.height = height;
 		this.weight = weight;
+		
+		// 1増やす
+		count++;
 	}
-	
+
 	// getter
 	public String getName() {
 		return this.name;
@@ -31,12 +33,12 @@ public class Person {
 	public double getHeight() {
 		return this.height;
 	}
-	
-	 // bmiのインスタンスを定義
+
+	// bmiのインスタンスを定義
 	public double bmi() {
 		return this.weight/this.height/this.height;
 	}
-	
+
 	// printのインスタンスを定義
 	public void print() {
 		System.out.println("名前は" + this.name + "です");
