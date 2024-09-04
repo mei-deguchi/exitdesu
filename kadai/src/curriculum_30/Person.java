@@ -36,7 +36,7 @@ public class Person {
 
 	// bmiのインスタンスを定義
 	public double bmi() {
-		return this.weight/this.height/this.height;
+		return this.weight / (3);
 	}
 
 	// printのインスタンスを定義

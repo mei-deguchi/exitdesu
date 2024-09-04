@@ -47,8 +47,8 @@ public class Main29 {
 	//	private static List<City> parseInput(String input){
 	//		return Arrays.steam(input.)
 	public static List<Japan> getCityByCities(List<Japan> cityList, List<Integer> cities) {
-		return cityList.stream()
-				.map(indexes -> cityList(indexes)
+		return cities.stream()
+				.map(indexes -> cities(indexes))
 				.collect(Collectors.toList());
 	}
 	
