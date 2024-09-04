@@ -44,11 +44,11 @@ public class Main29 {
 
 	//	
 
-	//	private static List<City> parseInput(String input){
-	//		return Arrays.steam(input.)
+//		private static List<City> parseInput(String input){
+//			return Arrays.steam(input.)
 	public static List<Japan> getCityByCities(List<Japan> cityList, List<Integer> cities) {
 		return cities.stream()
-				.map(indexes -> cities(indexes))
+				.map(indexes -> city(indexes))
 				.collect(Collectors.toList());
 	}
 	
