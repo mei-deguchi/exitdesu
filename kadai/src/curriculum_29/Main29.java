@@ -39,19 +39,18 @@ public class Main29 {
 
 		printCity(selectedCities);
 
+
+
 		sc.close();
 	}
 
-	//	
 
-//		private static List<City> parseInput(String input){
-//			return Arrays.steam(input.)
 	public static List<Japan> getCityByCities(List<Japan> cityList, List<Integer> cities) {
 		return cities.stream()
-				.map(indexes -> city(indexes))
+				.map(indexes -> cityList.get(indexes))
 				.collect(Collectors.toList());
 	}
-	
+
 
 	public static List<Integer> parseInput1(String input) {
 		return Arrays.stream(input.split(","))
@@ -64,7 +63,9 @@ public class Main29 {
 			System.out.println("都道府県名：" + city.getPrefecture());
 			System.out.println("県庁所在地：" + city.getCapital());
 			System.out.println("面積：" + String.format("%.1f", city.getArea()) + " km²");
+			System.out.println();
 		}
+
 	}
 }
 
